@@ -72,6 +72,9 @@
     <IncludePath>C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_image-2.6.3\include;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2-2.26.5\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2-2.26.5\lib\x64;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\lib\x64;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_image-2.6.3\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -105,6 +108,17 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2-2.26.5\lib\x64;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\lib\x64;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_image-2.6.3\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_image-2.6.3\include;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2-2.26.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2_mixer.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_image-2.6.3\lib\x64;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\lib\x64;C:\Users\ranu\Desktop\Files\Project\C\game_jam\Development\SDL2-2.26.5\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
