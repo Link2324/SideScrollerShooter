@@ -1,5 +1,4 @@
-/* This file contains all logic of game */
-
+#include <stdio.h>
 
 #include "defs.h"
 #include "draw.h"
@@ -7,12 +6,6 @@
 #include "stage.h"
 #include "structs.h"
 #include "util.h"
-
-
-// External Libraries
-#include "common.h"
-
-#include <stdio.h>
 
 // Initialize player
 static void initPlayer();
@@ -168,12 +161,13 @@ static void initPlayer()
 
 static void logic(void)
 {
+
     doBackground();
 
     doPlayer();
 
     doFighters();
-
+    
     doBullets();
 
     spawnEnemies();

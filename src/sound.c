@@ -1,7 +1,8 @@
 #include <string.h>
 
+#include <SDL_mixer.h>
+
 #include "defs.h"
-#include "common.h"
 #include "sound.h"
 
 static void loadSounds(void);

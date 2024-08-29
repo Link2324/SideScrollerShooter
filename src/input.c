@@ -1,6 +1,6 @@
+#include "defs.h"
 #include "input.h"
 #include "structs.h"
-#include "defs.h"
 
 void doInput(void)
 {

@@ -1,6 +1,8 @@
 #ifndef STRUCTS_H_INCLUDED
 #define STRUCTS_H_INCLUDED
-#include "common.h"
+
+#include <SDL_image.h>
+
 #include "defs.h"
 
 typedef struct {
@@ -69,9 +71,8 @@ typedef struct {
 	int speed;
 } Star;
 
-App app;
-Stage stage;
-Entity *player;
+extern App app;
+extern Stage stage;
+extern Entity *player;
 
 #endif // STRUCTS_H_INCLUDED
-

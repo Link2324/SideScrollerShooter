@@ -1,10 +1,12 @@
+#include <stdio.h>
+
+#include <SDL.h>
+#include <SDL_image.h>
+#include <SDL_mixer.h>
+
 #include "defs.h"
 #include "init.h"
 #include "structs.h"
-
-#include "common.h"
-
-#include <stdio.h>
 
 void initSDL(void)
 {

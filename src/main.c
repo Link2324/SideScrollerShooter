@@ -1,3 +1,5 @@
+#include <string.h>
+
 #include "draw.h"
 #include "init.h"
 #include "input.h"
@@ -6,10 +8,12 @@
 #include "structs.h"
 #include "util.h"
 
-#include "common.h"
-
 static void cleanup(void);
 static void capFrameRate(long* then, float* remainder);
+
+App app;
+Stage stage;
+Entity *player;
 
 int main(int argc, char *argv[])
 {
@@ -38,7 +42,7 @@ int main(int argc, char *argv[])
 		doInput();
 
 		app.delegate.logic();
-
+		
 		app.delegate.draw();
 
 		presentScene();

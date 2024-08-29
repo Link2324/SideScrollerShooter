@@ -1,6 +1,7 @@
 #ifndef DRAW_H_INCLUDED
 #define DRAW_H_INCLUDED
-#include "common.h"
+
+#include <SDL_image.h>
 
 void prepareScene(void);
 void presentScene(void);

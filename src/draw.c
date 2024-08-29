@@ -1,6 +1,7 @@
-#include "common.h"
-#include "structs.h"
+#include <SDL_image.h>
+
 #include "draw.h"
+#include "structs.h"
 
 void prepareScene(void)
 {
